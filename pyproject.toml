@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "inspire"
+version = "0.1.0"
+description = ""
+authors = [{name="Sinan Polatoglu", email="Sinan.Polatoglu@outlook.com"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests",
+    "pytest"
+]
+
+[project.scripts]
+inspire = "inspire.__main__:main"
